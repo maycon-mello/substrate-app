@@ -80,7 +80,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'rococoBasilisk',
     paraId: 2090,
     providers: {
-      'Galactic Council': 'wss://basilisk-rococo-rpc.play.hydration.cloud'
+      // 'Galactic Council': 'wss://rococo-basilisk-rpc.hydration.dev' // https://github.com/polkadot-js/apps/issues/9328
     },
     text: 'Basilisk',
     ui: {
@@ -315,9 +315,9 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
   },
   {
     info: 'rococoMd5',
-    paraId: 2093,
+    paraId: 2089,
     providers: {
-      'Hashed Systems': 'wss://c1.md5.hashed.live'
+      // 'Hashed Systems': 'wss://c1.md5.network' // https://github.com/polkadot-js/apps/issues/9059
     },
     text: 'MD5 Network',
     ui: {

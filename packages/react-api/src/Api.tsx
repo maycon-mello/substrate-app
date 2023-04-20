@@ -261,7 +261,7 @@ export function ApiCtxRoot ({ apiUrl, children, isElectron, store }: Props): Rea
   const [isApiInitialized, setIsApiInitialized] = useState(false);
   const [apiError, setApiError] = useState<null | string>(null);
   const [extensions, setExtensions] = useState<InjectedExtension[] | undefined>();
-  const apiEndpoint = useEndpoint(apiUrl);
+  const apiEndpoint = useEndpoint();
   const relayUrls = useMemo(
     () => (apiEndpoint && apiEndpoint.valueRelay && isNumber(apiEndpoint.paraId) && (apiEndpoint.paraId < 2000))
       ? apiEndpoint.valueRelay

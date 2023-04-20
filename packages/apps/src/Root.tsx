@@ -45,7 +45,7 @@ function Root ({ isElectron, store }: Props): React.ReactElement<Props> {
       <ThemeProvider theme={theme}>
         <QueueCtxRoot>
           <ApiCtxRoot
-            apiUrl={settings.apiUrl}
+            apiUrl='ws://127.0.0.1:9944'
             isElectron={isElectron}
             store={store}
           >

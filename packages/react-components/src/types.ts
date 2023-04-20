@@ -4,7 +4,6 @@
 import type { IconName } from '@fortawesome/fontawesome-svg-core';
 import type { WithTranslation } from 'react-i18next';
 import type { SubmittableExtrinsic } from '@polkadot/api/types';
-import type { Abi } from '@polkadot/api-contract';
 import type { ThemeDef } from '@polkadot/react-hooks/ctx/types';
 import type { AccountId, AccountIndex, Address, Index } from '@polkadot/types/interfaces';
 import type { ActionStatus, TxCallback, TxFailedCallback } from './Status/types.js';
@@ -52,7 +51,7 @@ export interface TxButtonProps {
 export type BitLength = 8 | 16 | 32 | 64 | 128 | 256;
 
 interface ContractBase {
-  abi: Abi;
+  abi: undefined;
 }
 
 export interface Contract extends ContractBase {

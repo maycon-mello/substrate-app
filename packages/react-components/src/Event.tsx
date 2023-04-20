@@ -1,7 +1,6 @@
 // Copyright 2017-2023 @polkadot/react-components authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { DecodedEvent } from '@polkadot/api-contract/types';
 import type { Bytes } from '@polkadot/types';
 import type { Event } from '@polkadot/types/interfaces';
 import type { Codec } from '@polkadot/types/types';
@@ -28,7 +27,7 @@ interface Value {
   value: Codec;
 }
 
-interface AbiEvent extends DecodedEvent {
+interface AbiEvent {
   values: Value[];
 }
 

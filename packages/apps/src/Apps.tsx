@@ -12,7 +12,6 @@ import { useApi, useTheme } from '@polkadot/react-hooks';
 import Signer from '@polkadot/react-signer';
 
 import Content from './Content/index.js';
-import Menu from './Menu/index.js';
 import ConnectingOverlay from './overlays/Connecting.js';
 import DotAppsOverlay from './overlays/DotApps.js';
 import WarmUp from './WarmUp.js';
@@ -34,7 +33,6 @@ function Apps ({ className = '' }: Props): React.ReactElement<Props> {
     <>
       <GlobalStyle uiHighlight={uiHighlight} />
       <StyledDiv className={`${className} apps--Wrapper ${themeClassName}`}>
-        <Menu />
         <AccountSidebar>
           <Signer>
             <Content />
